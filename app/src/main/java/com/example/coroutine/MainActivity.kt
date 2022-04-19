@@ -3,13 +3,13 @@ package com.example.coroutine
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.Settings
+
 import android.util.Log
 import android.widget.Button
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.*
 import kotlin.system.measureTimeMillis
-import kotlin.time.measureTime
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -109,6 +109,10 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+
+//        here the coroutine provides the run the tasks in backgroun so that it is helpful to do the IO oprations from the firebase or any other type of data base
+
+
 
     }
 
